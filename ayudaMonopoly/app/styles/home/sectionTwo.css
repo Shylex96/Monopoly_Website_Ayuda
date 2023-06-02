@@ -1,0 +1,68 @@
+/* Sección sobre el juego */
+
+.section2 {
+  padding: 50px 0;
+  cursor: default;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  flex: 1;
+  margin-left: 10%;
+}
+
+.image img {
+  max-width: 50%;
+}
+
+.text {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.text h2 {
+  font-size: 36px;
+  color: #cbb435;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.text p {
+  font-size: 18px;
+  color: #fff;
+  margin-right: 100px;
+  text-align: justify;
+}
+
+.info-button {
+  background-color: #cbb435;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  /* text-transform: uppercase;*/
+  margin-top: 10px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.info-button:hover {
+  background-color: #b8a231;
+  box-shadow: 0 0 10px 5px #9c840f;
+  scale: 1.2;
+  margin-left: 18px;
+}

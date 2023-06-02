@@ -1,0 +1,40 @@
+/* Estilos para resolución de 992px */
+@media (max-width: 992px) {
+  .hero-image img {
+    /* Reducción del 15% en el tamaño de la imagen */
+    transform: scale(0.85);
+    /* Importante: La imagen no se superpone al nav con esto */
+    position: relative;
+    z-index: -1;
+  }
+}
+
+/* Estilos para resolución de 768px */
+@media (max-width: 768px) {
+  .hero-image {
+    /* Ocultar la imagen de la sección */
+    display: none; 
+  }
+
+  .hero-content {
+    /* Centrar el contenido de la sección */
+    margin-left: 10%;
+  }
+
+  .logo img {
+    /* Ocultar la imagen del logo en el nav */
+    display: none; 
+  }
+
+  nav {
+    display: flex;
+    /* Alinear los enlaces a la izquierda */
+    justify-content: flex-start;
+  }
+  
+  nav ul {
+    /* Mover los enlaces al lado izquierdo */
+    margin-right: auto; 
+    margin-left: 0;
+  }
+}
