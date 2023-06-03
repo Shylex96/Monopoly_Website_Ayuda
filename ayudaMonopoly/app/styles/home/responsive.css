@@ -13,7 +13,7 @@
 @media (max-width: 768px) {
   .hero-image {
     /* Ocultar la imagen de la sección */
-    display: none; 
+    display: none;
   }
 
   .hero-content {
@@ -23,7 +23,7 @@
 
   .logo img {
     /* Ocultar la imagen del logo en el nav */
-    display: none; 
+    display: none;
   }
 
   nav {
@@ -31,10 +31,42 @@
     /* Alinear los enlaces a la izquierda */
     justify-content: flex-start;
   }
-  
+
   nav ul {
     /* Mover los enlaces al lado izquierdo */
-    margin-right: auto; 
+    margin-right: auto;
     margin-left: 0;
+  }
+
+  .imageDados {
+    display: none;
+  }
+  
+  .textDados {
+    margin-left: -25%;
+  }
+
+  .textDados p {
+    max-width: 100%;
+    margin-right: 0px;
+  }
+
+  /* Cards de la sección de instrucciones */
+  .cards-row-one,
+  .cards-row-two {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    flex-basis: 50%;
+  }
+
+  .card-text {
+    font-size: 18px;
+  }
+
+  .container {
+    width: 70vw;
   }
 }

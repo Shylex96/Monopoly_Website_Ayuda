@@ -1,0 +1,50 @@
+/* Sección principal */
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+  margin-left: 10%;
+  cursor: default;
+}
+
+.hero-content {
+  width: 50%;
+  text-align: left;
+}
+
+.hero-title {
+  font-size: 72px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  font-size: 48px;
+  color: #cbb435;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.hero-description {
+  font-size: 18px;
+  color: #fff;
+  margin-top: 20px;
+  text-align: justify;
+  max-width: 25rem;
+}
+
+.hero2-description {
+  font-size: 18px;
+  color: #b2acac;
+  margin-top: -10px;
+}
+
+
+.hero-image {
+  width: 50%;
+  margin-top: 7%;
+  margin-left: 3%;
+}
+

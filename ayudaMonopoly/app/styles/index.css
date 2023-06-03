@@ -1,8 +1,10 @@
 @import "../styles/home/globals.css";
 @import "../styles/home/sidebar.css";
 @import "../styles/home/nav.css";
-@import "../styles/home/sectionOne.css";
-@import "../styles/home/sectionTwo.css";
+@import "../styles/home/sectionIndex.css";
+@import "../styles/home/sectionAbout.css";
+@import "../styles/home/sectionCards.css";
+@import "../styles/home/sectionFaq.css";
 @import "../styles/home/footer.css";
 @import "../styles/home/animation.css";
 @import "../styles/home/responsive.css";

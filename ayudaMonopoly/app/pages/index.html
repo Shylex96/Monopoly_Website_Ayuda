@@ -16,7 +16,7 @@
 <body>
   <!-- Crear efecto de copos de nieve  -->
   <div class="snowflakes"></div>
-  
+
   <!-- Nav fijo  -->
   <header>
     <nav>
@@ -25,8 +25,8 @@
       </div>
       <ul class="nav-links">
         <li><a href="#home" id="inicio-link">Inicio</a></li>
-        <li><a href="#about">Instrucciones</a></li>
-        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#about" id="inicio-about">Instrucciones</a></li>
+        <li><a href="#faq" id="inicio-faq">FAQ</a></li>
         <li><a href="#rules">Reglas</a></li>
       </ul>
     </nav>
@@ -37,8 +37,9 @@
     <div class="hero-content">
       <h1 class="hero-title">Monopoly Deluxe</h1>
       <h2 class="hero-subtitle">El mejor juego<br>de tablero</h2>
-      <p class="hero-description">Un juego familiar donde se competirá por ver quién conquistará las calles más famosas de España.</p>
-      <p class="hero2-description">Juego apto para que todas las edades y públicos disfruten.</p>
+      <p class="hero-description">Un juego familiar donde se competirá por ver quién conquistará las calles más famosas
+        de España.</p>
+      <p class="hero2-description">Juego apto para todas las edades y públicos.</p>
     </div>
     <div class="hero-image">
       <img src="../img/imagenSection.png" alt="Milburn Pennybags con dinero.">
@@ -46,20 +47,115 @@
   </section>
 
   <!-- Sección sobre el juego  -->
-  <section class="section2">
+  <section class="about-game-section">
     <div class="container">
       <div class="content">
-        <div class="image">
+        <div class="imageDados">
           <img src="../img/dadosSection.webp" alt="Tirada de dados">
         </div>
-        <div class="text">
+        <div class="textDados">
           <h2>Sobre el juego</h2>
-          <p>El Monopoly es un juego de mesa clásico donde los jugadores compiten por 
-          acumular propiedades y riquezas, negociando y tomando decisiones estratégicas 
-          para convertirse en el magnate inmobiliario más exitoso.</p>
+          <p>El Monopoly es un juego de mesa clásico donde los jugadores compiten por
+            acumular propiedades y riquezas, negociando y tomando decisiones estratégicas
+            para convertirse en el magnate inmobiliario más exitoso.</p>
 
-          <button class="info-button">Más Información</button>
+          <button class="info-button" onclick="scrollToInstructions()">Más Información</button>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Instrucciones  -->
+  <section class="card-section">
+    <div class="instructions">
+      <h2>Instrucciones</h2>
+    </div>
+
+    <div class="cards-row-one">
+      <div class="card">
+        <h3>Banco</h3>
+        <p class="card-text">Es el Administrador central del dinero y las transacciones en el juego.<br><br> Distribuye
+          el dinero inicial, gestiona las propiedades y trata todo lo financiero.</p>
+      </div>
+      <div class="card">
+        <h3>Salida</h3>
+        <p class="card-text">Es la casilla de la que parten todos los jugadores al iniciar un nuevo un juego.<br><br> La
+          casilla de Salida otorga $20.000 cada vez que se pase por ella.</p>
+      </div>
+      <div class="card">
+        <h3>Comprar</h3>
+        <p class="card-text" id="card-buy">La compra es una propiedad del juego que permite a los jugadores comprar una
+          calle o propiedad cuando caen en ella por un determinado precio.<br><br>Si un jugador cae en la propiedad de
+          otro deberá pagar un impuesto.</p>
+      </div>
+    </div>
+
+    <div class="cards-row-two">
+      <div class="card">
+        <h3>Eventos</h3>
+        <p class="card-text" id="card-events">Existen dos tipos de casillas consideradas especiales: Eventos y
+          Suerte.<br><br> Las casillas de suerte pueden darte dinero o quitártelo.<br> Las casillas de evento pueden
+          moverte por el mapa.</p>
+      </div>
+      <div class="card">
+        <h3>Cárcel</h3>
+        <p class="card-text" id="card-jail">La cárcel hace que el jugador permanezca sin jugar algunos turnos
+          (3).<br>Debe caer en la casilla del policía o una carta de Evento le envíe.<br><br>Si el jugador cae en la
+          casilla de la prisión directamente esta contará como visita y no pasará nada.</p>
+      </div>
+      <div class="card">
+        <h3>Parking</h3>
+        <p class="card-text">La casilla de Parking cuenta como una zona de descanso y no pasará nada.<br><br>Cuando
+          todas las propiedades son de otros jugadores es un alivio caer aquí.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de preguntas y respuestas -->
+  <section class="faq-section">
+    <h1 class="titulo-central">Preguntas y Respuestas <span>Frecuentes</span></h1>
+    <p class="subtitulo">Respuestas a algunas de las preguntas más frecuentes. Si tienes alguna pregunta<br>a la que no
+      encuentras respuesta, contáctanos <span id="contacto-link">aquí.</span></p>
+    <div class="container">
+      <div class="box" onmouseenter="toggleHoverBox(event)" onmouseleave="toggleHoverBox(event)">
+        <img src="../img/faqImage.png" alt="Question Mark">
+        <p class="box-pregunta">¿Cuánto tiempo dura una partida normalmente?</p>
+        <p class="box-respuesta">La duración aproximada puede ser entre una y cuatro horas en cada partida.</p>
+      </div>
+
+      <!-- Pregunta 1 -->
+      <div class="box">
+        <img src="../img/faqImage.png" alt="Question Mark">
+        <p class="box-pregunta">¿Cómo puedo saber el dinero que tengo?</p>
+        <p class="box-respuesta">En la información del jugador, al lado de tu nombre verás el dinero que posees.</p>
+      </div>
+
+      <!-- Pregunta 2 -->
+      <div class="box">
+        <img src="../img/faqImage.png" alt="Question Mark">
+        <p class="box-pregunta">¿Quién gana la partida?</p>
+        <p class="box-respuesta">El jugador con más dinero al pulsar el botón "Finalizar partida".</p>
+      </div>
+
+      <!-- Pregunta 3 -->
+      <div class="box">
+        <img src="../img/faqImage.png" alt="Question Mark">
+        <p class="box-pregunta">¿Cómo puedo finalizar una partida?</p>
+        <p class="box-respuesta">Deberás pulsar en el botón "Finalizar partida" y confirmar de nuevo.</p>
+      </div>
+
+      <!-- Pregunta 4 -->
+      <div class="box">
+        <img src="../img/faqImage.png" alt="Question Mark">
+        <p class="box-pregunta">¿Cómo puedo saber que propiedades tengo?</p>
+        <p class="box-respuesta">Tus propiedades aparecerán en la información de jugador.</p>
+      </div>
+
+      <!-- Pregunta 5 -->
+      <div class="box">
+        <img src="../img/faqImage.png" alt="Question Mark">
+        <p class="box-pregunta">¿Se puede jugar con dos dados? (Modo Express)</p>
+        <p class="box-respuesta">Actualmente se puede jugar con un dado únicamente.</p>
       </div>
     </div>
   </section>
