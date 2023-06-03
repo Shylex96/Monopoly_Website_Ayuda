@@ -18,6 +18,7 @@ nav {
 .logo img {
   height: 50px;
   width: auto;
+  margin-top: -15px;
   /* pointer-events: none; */
 }
 
@@ -54,4 +55,11 @@ nav {
 
 .nav-links li a:hover::after {
   width: 100%;
+}
+
+#playMusic {
+  margin-left: 30px;
+  margin-top: -5px;
+  width: 30px;
+  cursor: pointer;
 }

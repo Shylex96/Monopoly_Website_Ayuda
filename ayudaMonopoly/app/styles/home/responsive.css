@@ -9,8 +9,24 @@
   }
 }
 
+/* Estilos para resolución de 835px (imagen música) */
+@media (max-width: 835px) {
+  #playMusic {
+    width: 30px;
+    height: 30px;
+  }
+  .nav-links li a::after {
+    background-color: #000;
+  }
+}
+
 /* Estilos para resolución de 768px */
 @media (max-width: 768px) {
+
+  .nav-links li a::after {
+    background-color: #fff;
+  }
+
   .hero-image {
     /* Ocultar la imagen de la sección */
     display: none;
