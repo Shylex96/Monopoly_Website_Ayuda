@@ -74,3 +74,16 @@
 .box:hover {
   background-color: #cbb435;
 }
+
+.box-imgPregunta {
+  display: inline;
+}
+
+.box-imgRespuesta {
+  display: none;
+	margin-left: -5px;
+}
+
+.box p {
+	margin-top: 10px;
+}

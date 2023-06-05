@@ -1,0 +1,50 @@
+footer {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+	cursor: default;
+	margin-top: 5rem;
+}
+
+.footer-column {
+  width: 20%;
+  padding: 20px;
+	margin-left: 5%;
+}
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0 0 10px;
+	text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+	margin-bottom: 5px;
+}
+
+li a {
+  color: #fff;
+  text-decoration: underline;
+	margin-bottom: 5px;
+}
+
+a[href="#"] {
+  text-decoration: none;
+	color: gray;
+}
+
+.datosContacto {
+	color: gray;
+}

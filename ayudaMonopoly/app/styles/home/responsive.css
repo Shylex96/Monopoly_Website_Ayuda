@@ -1,88 +1,100 @@
 /* Estilos para resolución de 992px */
 @media (max-width: 992px) {
-  .hero-image img {
-    /* Reducción del 15% en el tamaño de la imagen */
-    transform: scale(0.85);
-    /* Importante: La imagen no se superpone al nav con esto */
-    position: relative;
-    z-index: -1;
-  }
+	.hero-image img {
+		/* Reducción del 15% en el tamaño de la imagen */
+		transform: scale(0.85);
+		/* Importante: La imagen no se superpone al nav con esto */
+		position: relative;
+		z-index: -1;
+	}
 }
 
 /* Estilos para resolución de 835px (imagen música) */
 @media (max-width: 835px) {
-  #playMusic {
-    width: 30px;
-    height: 30px;
-  }
-  .nav-links li a::after {
-    background-color: #000;
-  }
+	#playMusic {
+		width: 30px;
+		height: 30px;
+	}
+
+	.nav-links li a::after {
+		background-color: #000;
+	}
 }
 
 /* Estilos para resolución de 768px */
 @media (max-width: 768px) {
 
-  .nav-links li a::after {
-    background-color: #fff;
-  }
+	.nav-links li a::after {
+		background-color: #fff;
+	}
 
-  .hero-image {
-    /* Ocultar la imagen de la sección */
-    display: none;
-  }
+	.hero-image {
+		/* Ocultar la imagen de la sección */
+		display: none;
+	}
 
-  .hero-content {
-    /* Centrar el contenido de la sección */
-    margin-left: 10%;
-  }
+	.hero-content {
+		/* Centrar el contenido de la sección */
+		margin-left: 10%;
+	}
 
-  .logo img {
-    /* Ocultar la imagen del logo en el nav */
-    display: none;
-  }
+	.logo img {
+		/* Ocultar la imagen del logo en el nav */
+		display: none;
+	}
 
-  nav {
-    display: flex;
-    /* Alinear los enlaces a la izquierda */
-    justify-content: flex-start;
-  }
+	nav {
+		display: flex;
+		/* Alinear los enlaces a la izquierda */
+		justify-content: flex-start;
+	}
 
-  nav ul {
-    /* Mover los enlaces al lado izquierdo */
-    margin-right: auto;
-    margin-left: 0;
-  }
+	nav ul {
+		/* Mover los enlaces al lado izquierdo */
+		margin-right: auto;
+		margin-left: 0;
+	}
 
-  .imageDados {
-    display: none;
-  }
-  
-  .textDados {
-    margin-left: -25%;
-  }
+	.imageDados {
+		display: none;
+	}
 
-  .textDados p {
-    max-width: 100%;
-    margin-right: 0px;
-  }
+	.textDados {
+		margin-left: -25%;
+	}
 
-  /* Cards de la sección de instrucciones */
-  .cards-row-one,
-  .cards-row-two {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .card {
-    flex-basis: 50%;
-  }
+	.textDados p {
+		max-width: 100%;
+		margin-right: 0px;
+	}
 
-  .card-text {
-    font-size: 18px;
-  }
+	/* Cards de la sección de instrucciones */
+	.cards-row-one,
+	.cards-row-two {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 
-  .container {
-    width: 70vw;
+	.card {
+		flex-basis: 50%;
+	}
+
+	.card-text {
+		font-size: 18px;
+	}
+
+	.container {
+		width: 70vw;
+	}
+
+	.footer-column {
+			width: 100%;
+			margin-bottom: 20px;
+	}
+
+	footer {
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
   }
 }
