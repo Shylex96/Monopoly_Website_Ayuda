@@ -70,3 +70,7 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+.box:hover {
+  background-color: #cbb435;
+}
