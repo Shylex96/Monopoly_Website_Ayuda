@@ -35,8 +35,6 @@ function reproducirCancion() {
 // Agregar el evento de clic a la imagen
 playMusicImg.addEventListener("click", reproducirCancion);
 
-
-
 // ############# Anclas de la página #############
 // Inicio -- Arriba del todo.
 const inicioLink = document.getElementById("inicio-link");
@@ -98,29 +96,29 @@ function scrollToContact() {
 
 // Mostrar o no las preguntas y respuestas de FAQ
 function toggleHoverBox(box) {
-  const pregunta = box.querySelector('.box-pregunta');
-  const respuesta = box.querySelector('.box-respuesta');
+	const pregunta = box.querySelector('.box-pregunta');
+	const respuesta = box.querySelector('.box-respuesta');
 
-  pregunta.classList.toggle('hidden');
-  respuesta.classList.toggle('hidden');
+	pregunta.classList.toggle('hidden');
+	respuesta.classList.toggle('hidden');
 
 	const imagenPregunta = box.querySelector('.box-imgPregunta');
-  const imagenRespuesta = box.querySelector('.box-imgRespuesta');
+	const imagenRespuesta = box.querySelector('.box-imgRespuesta');
 
-  // Cambiar las imágenes
-  if (imagenPregunta.style.display === 'none') {
-    imagenPregunta.style.display = 'inline';
-    imagenRespuesta.style.display = 'none';
-  } else {
-    imagenPregunta.style.display = 'none';
-    imagenRespuesta.style.display = 'inline';
-  }
+	// Cambiar las imágenes
+	if (imagenPregunta.style.display === 'none') {
+		imagenPregunta.style.display = 'inline';
+		imagenRespuesta.style.display = 'none';
+	} else {
+		imagenPregunta.style.display = 'none';
+		imagenRespuesta.style.display = 'inline';
+	}
 }
 
 // Establecer tamaño de la imagen de respuesta (check-verde)
 const imagenesRespuesta = document.querySelectorAll('.box-imgRespuesta');
 
 for (let i = 0; i < imagenesRespuesta.length; i++) {
-  imagenesRespuesta[i].style.width = '40px';
-  imagenesRespuesta[i].style.height = 'auto';
+	imagenesRespuesta[i].style.width = '40px';
+	imagenesRespuesta[i].style.height = 'auto';
 }
